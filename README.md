@@ -2,6 +2,8 @@
 the link to the live view of the site here
 https://hngtasktwo-resume.netlify.app/
 
+CLICK ON THIS LINK TO THE SIMPLE PROGRAM TASK..https://github.com/ibrahimbank/SimpleProgram
+
 
 
 ![HNG-Task2-Resume-1](https://user-images.githubusercontent.com/41842634/130092365-50c9d8c9-1ad4-412c-b209-0fd0dac0678a.gif)
