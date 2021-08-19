@@ -1,4 +1,4 @@
-# This is HNGTASKTWO-RESUME and also contain the picture of how the site looks on desktop and mobile
+# This is HNGTASKTWO-RESUME and also contain the picture of how the site looks on desktop and mobile, Also included is the link to the Simple Program that print my name to  the screen
 the link to the live view of the site here
 https://hngtasktwo-resume.netlify.app/
 
