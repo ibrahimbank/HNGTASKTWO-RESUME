@@ -1,0 +1,331 @@
+:root {
+  --primary-color: rgb(2, 2, 72);
+  --secondary-color: rgba(54, 142, 169, 0.857);
+  --side-bar-bgColor: rgba(17, 17, 97, 0.912);
+  --text-colorOne: #fff;
+  --text-colorTwo: rgb(67, 52, 52);
+  --text-colorthree: rgb(130, 128, 128);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg,
+img {
+  width: 10px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+  margin-bottom: -1rem;
+  font-weight: 550;
+  color: var(--text-colorTwo);
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+  color: var(--text-colorthree);
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ////////////// sidebar ///////////// */
+
+.side__bar {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  order: 2;
+  gap: 1rem;
+  align-content: center;
+  justify-items: center;
+  padding: 1rem;
+  background-color: var(--side-bar-bgColor);
+  color: var(--text-colorOne);
+}
+
+.contacts,
+.skills,
+.certifications {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contact,
+.skill,
+.certificate {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contact svg,
+.certificate svg {
+  margin-right: 0.5rem;
+  width: 1.5rem;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 1rem;
+
+  color: var(--text-colorOne);
+}
+
+.side__bar h6 {
+  font-size: 1rem;
+  color: var(--text-colorOne);
+  margin-bottom: 0;
+}
+
+.radio_btn {
+  display: flex;
+  margin-right: 1rem;
+  width: 50%;
+  height: 1rem;
+}
+
+.image {
+  display: none;
+}
+
+.range {
+  width: 95%;
+  height: 100%;
+  background-color: rgb(9, 107, 29);
+}
+
+.range2 {
+  width: 50%;
+  background-color: rgb(0, 132, 255);
+}
+
+.range3 {
+  width: 20%;
+  background-color: rgb(255, 0, 119);
+}
+
+/* //////////////////////////////////////////// MAIN PAGE ///////////////////////////////////////////////////////////////*/
+
+.main {
+  flex: 4;
+  order: 1;
+  padding: 1rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 2rem;
+  width: 7rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.icon a img {
+  width: 100%;
+}
+
+.icon__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile h4 {
+  margin-bottom: 1rem;
+}
+
+.image_main {
+  margin-right: 2rem;
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* ////////////// media ueries //////////// */
+
+@media screen and (max-width: 580px) {
+  .side__bar {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side__bar {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    order: 1;
+    justify-items: flex-start;
+  }
+
+  .main {
+    flex: 4;
+    order: 2;
+    /* margin-top: 7rem; */
+  }
+
+  .image {
+    display: block;
+    margin-right: 2rem;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .image_main {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .icon a img {
+    width: 100%;
+  }
+
+  .icon__links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
